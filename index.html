@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0;">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+
+	<title>DentistPro</title>
+
+
+	<!-- Main StyleSheet -->
+	<link
+		href="https://fonts.googleapis.com/css?family=Poppins:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+
+
+	<link rel="icon" type="image/png" href="images/favicon.png">
+
+
+	<link rel="stylesheet" href="owl-slider/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="owl-slider/assets/owl.theme.default.min.css">
+	<link rel="stylesheet" href="fonts/icons-fontawesome/css/all.min.css">
+	<link rel="stylesheet" href="fonts/icons-linear.css">
+	<!-- jQuery UI CSS -->
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<!-- jQuery UI JavaScript -->
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<link href="bxslider/jquery.bxslider.css" rel="stylesheet" />
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link href="style-responsive.css" rel="stylesheet" type="text/css" />
+
+
+
+	<script src="js/jquery.js"></script>
+	<script src="owl-slider/owl.carousel.js"></script>
+	<script src="js/scripts.js"></script>
+	<script>
+		jQuery(document).ready(function ($) {
+			$('.counter').counterUp({
+				delay: 10,
+				time: 2000
+			});
+		});
+	</script>
+	<script src="contactform/contactform.js"></script>
+</head>
+
+<body id="home">
+
+
+
+
+
+
+	<header>
+		<div class="container">
+
+
+			<a href="index.html" class="logo"><img src="images/logo.png" alt="" /></a>
+
+			<div class="menuicons" style="display:none;">
+				<a href="javascript:void();" class="shownav">
+					<span class="fa-solid fa-bars"></span>
+				</a>
+				<a href="javascript:void();" class="hidenav" style="display:none;">
+					<span class="fa-solid fa-times"></span>
+				</a>
+			</div>
+			<nav class="headernav" id="headnav">
+				<ul>
+					<li class="active"><a href="#home">INICIO</a></li>
+					<li><a href="#services">SERVICIOS DENTALES</a></li>
+					<li><a href="#about">SOBRE NUESTRA DOCTORA</a></li>
+
+					<li><a href="#contact">CONTACTO</a></li>
+				</ul>
+			</nav>
+
+			<!--<ul class="contact">
+		    	<li><span class="fa fa-phone"></span>  &nbsp; +1 123.456.7890 </li>
+		    	<li><span class="fa-regular fa-envelope"></span>  &nbsp; <a href="mailto:drjane@siteurl.com;">drjane@siteurl.com</a></li>
+		    </ul>-->
+
+
+
+		</div>
+	</header>
+	<!--header-->
+
+
+
+	<div class="banner">
+		<div class="bannercontent">
+
+			<div class="bannertextwrap">
+				<div class="container">
+					<div class="bannertext">
+						<h2>
+							Obtenga su chequeo y tratamiento dental completo.
+						</h2>
+						<div class="doctorcard">
+							<div class="thumb" style="background: url(images/doctor.jpg) no-repeat center center;">
+							</div>
+							<div class="text">
+								<h5>Dentista</h5>
+								<h3>Dr. John Doe</h3>
+								<p>
+									Dentista certificado y calificado A + con más de 500 + reseñas.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--bannertextwrap-->
+
+
+
+			<div class="videoouter">
+				<video autoplay muted loop>
+					<source src="images/videobg2.mp4" type="video/mp4">
+				</video>
+			</div>
+			<!-- video background -->
+
+		</div>
+		<!--bannercontent-->
+
+
+		<div class="formwrap">
+			<div class="container">
+
+			</div>
+		</div>
+
+
+
+
+
+
+		<div class="dental-cert-wrap">
+			<div class="container">
+
+				<div class="dental-cert">
+					<img src="images/d-logo-1.png" alt="" />
+					<img src="images/d-logo-2.png" alt="" />
+					<img src="images/d-logo-3.png" alt="" />
+					<img src="images/d-logo-4.png" alt="" />
+					<img src="images/d-logo-5.png" alt="" />
+				</div>
+
+			</div>
+		</div>
+
+		<!--dental-logos-->
+
+
+	</div> <br><br><br><b><br>
+
+		<!--/banner-->
+
+
+<!---------------------------------------------------------------------------------------------IA dentista---------------------------------------------------------------------------->
+		
+
+<!----------------------------------------------------------------------------------------IA dentista---------------------------------------------------------------------------->
+
+
+<section id="model" class="py-5"></section>
+
+    <h2 style="padding-left: 550px;">¿Quieres evaluar tus Dientes??</h2><br>
+	<label for="upload-image" class="btn btn-primary btn-lg" 
+	style="border:rgb(14, 13, 14); background-color: rgb(151, 36, 151); color: #ddd; 
+		   border-radius: 10px; margin: 4%; position: relative; left: 570px;">
+ Subir foto
+</label>    <input type="file" id="upload-image" accept="image/*" onchange="uploadImage()" style="display: none;" />
+
+    <div id="image-container" class="my-4"></div> <!-- Contenedor para la imagen cargada -->
+
+    <div id="label-container" class="progress-container"></div>
+</section>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+
+    <script type="text/javascript">
+        // the link to your model provided by Teachable Machine export panel
+        const URL = "https://teachablemachine.withgoogle.com/models/2OgiLw-2K/";
+
+        let model, labelContainer, maxPredictions;
+
+        // Load the image model
+        async function init() {
+            const modelURL = URL + "model.json";
+            const metadataURL = URL + "metadata.json";
+
+            // load the model and metadata
+            model = await tmImage.load(modelURL, metadataURL);
+            maxPredictions = model.getTotalClasses();
+
+            // setup label container
+            labelContainer = document.getElementById("label-container");
+            for (let i = 0; i < maxPredictions; i++) {
+                // Create a div for the progress bar
+                const progressLabel = document.createElement("div");
+                progressLabel.classList.add("progress-label");
+                labelContainer.appendChild(progressLabel);
+
+                const progressBarContainer = document.createElement("div");
+                progressBarContainer.classList.add("progress");
+
+                const progressBar = document.createElement("div");
+                progressBar.classList.add("progress-bar");
+                progressBar.setAttribute("role", "progressbar");
+                progressBar.setAttribute("aria-valuemin", "0");
+                progressBar.setAttribute("aria-valuemax", "100");
+                progressBar.style.width = "0%";  // Initialize with 0%
+
+                progressBarContainer.appendChild(progressBar);
+                labelContainer.appendChild(progressBarContainer);
+            }
+        }
+
+        // Function to handle image upload and run prediction
+async function uploadImage() {
+    const fileInput = document.getElementById("upload-image");
+    const file = fileInput.files[0];
+    const reader = new FileReader();
+    const imageContainer = document.getElementById("image-container");
+
+    reader.onload = function (event) {
+        // Remove any existing image
+        imageContainer.innerHTML = '';
+
+        // Create a new image element
+        const imgElement = document.createElement("img");
+        imgElement.src = event.target.result;
+        imgElement.onload = async function () {
+            const uploadedImageCanvas = document.createElement("canvas");
+            uploadedImageCanvas.width = imgElement.width;
+            uploadedImageCanvas.height = imgElement.height;
+            const ctx = uploadedImageCanvas.getContext("2d");
+            ctx.drawImage(imgElement, 0, 0);
+
+            // Append the image to the container
+            imageContainer.appendChild(imgElement);
+
+            // Predict the uploaded image
+            await predict(uploadedImageCanvas);
+        };
+    };
+
+    if (file) {
+        reader.readAsDataURL(file);
+    }
+}
+
+
+
+        // predict function
+async function predict(imageElement) {
+    const prediction = await model.predict(imageElement);
+    for (let i = 0; i < maxPredictions; i++) {
+        const classPrediction = prediction[i].className;
+        const probability = (prediction[i].probability * 100).toFixed(2); // Convert to percentage
+
+        // Update progress bar label and width
+        const progressLabel = labelContainer.childNodes[i * 2];
+        const progressBar = labelContainer.childNodes[i * 2 + 1].firstChild;
+
+        progressLabel.innerHTML = classPrediction + ": " + probability + "%";
+        progressBar.style.width = probability + "%";
+        progressBar.setAttribute("aria-valuenow", probability);
+
+        // Assign a single color to all progress bars
+        progressBar.classList.remove("progress-bar-primary", "progress-bar-success", "progress-bar-info", "progress-bar-warning", "progress-bar-danger");
+        progressBar.classList.add("progress-bar-primary"); // Or any other color class
+    }
+}
+
+
+
+        // Initialize the model when the page loads
+        window.onload = init;
+    </script>
+
+
+<style>
+	#model {
+    text-align: center;
+    margin-top: 50px;
+}
+#image-container {
+    text-align: center; /* Centra la imagen en el contenedor */
+}
+
+#image-container img {
+    width: 300px; /* Ajusta el ancho de las imágenes */
+    height: 300px; /* Ajusta la altura de las imágenes */
+    object-fit: cover; /* Asegura que la imagen cubra el área del contenedor sin distorsión */
+    border: 2px solid #ddd; /* Añade un borde ligero alrededor de la imagen */
+    border-radius: 5px; /* Opcional: redondea las esquinas de la imagen */
+}
+
+.progress-container {
+    margin-top: 10px;
+    max-width: 600px; /* Ajusta este valor según el tamaño que prefieras */
+    margin-left: auto;
+    margin-right: auto; /* Centra el contenedor */
+}
+.progress-label {
+    font-weight: 300;
+    margin-bottom: 5px;
+    color: #343a40;
+}
+.progress {
+    height: 30px;
+    border-radius: 5px;
+    background-color: #e9ecef;
+    /* Light grey background */
+}
+.progress-bar {
+    border-radius: 5px;
+    transition: width 0.6s ease;
+}
+/* Custom colors */
+.progress-bar-primary {
+    background-color: #f10e0e; /* Cambia este color por el que prefieras */
+}
+</style>
+<!----------------------------------------------------------------------------------------IA dentista---------------------------------------------------------------------------->
+
+		<div class="dental_services" id="services">
+			<div class="container">
+
+
+				<div class="service_items_wrap">
+					<div class="service_items">
+
+
+						<div class="item">
+							<div class="itemcontent">
+								<div class="thumb">
+									<img src="images/pic_1.jpg" alt="" />
+								</div>
+								<div class="text">
+									<h3>Rayos X dentales</h3>
+									<p>
+										¡Obtén una evaluación precisa de tu salud dental! Con nuestros Rayos X Dentales
+										de
+										última tecnología, podemos detectar cualquier problema oculto antes de que se
+										vuelva
+										grave.
+									</p>
+								</div>
+							</div>
+						</div>
+
+
+
+						<div class="item">
+							<div class="itemcontent">
+								<div class="thumb">
+									<img src="images/pic_2.jpg" alt="" />
+								</div>
+								<div class="text">
+									<h3>Empastes e Implantes</h3>
+									<p>
+										Recupera tu sonrisa y tu confianza con nuestros empastes e implantes dentales.
+									</p>
+								</div>
+							</div>
+						</div>
+
+
+
+						<div class="item">
+							<div class="itemcontent">
+								<div class="thumb">
+									<img src="images/pic_3.jpg" alt="" />
+								</div>
+								<div class="text">
+									<h3>Brackets</h3>
+									<p>
+										¡Luce una sonrisa perfecta! </p>
+								</div>
+							</div>
+						</div>
+
+
+
+						<div class="item">
+							<div class="itemcontent">
+								<div class="thumb">
+									<img src="images/pic_4.jpg" alt="" />
+								</div>
+								<div class="text">
+									<h3>Consejería Nutricional</h3>
+									<p>
+										¡Mejora tu salud dental desde el interior! </p>
+								</div>
+							</div>
+						</div>
+
+
+					</div>
+				</div>
+
+
+
+			</div>
+		</div>
+
+
+
+
+		<!--dental_services-->
+
+
+
+
+		<div class="about" id="about">
+			<div class="container">
+
+				<div class="imagearea">
+					<img src="images/doctor2.jpg" alt="" />
+				</div>
+
+				<div class="text">
+					<h4>Conócela</h4>
+					<h3>Dr. Jane Smith</h3>
+					<h5>Certificada Médicamente.</h5>
+					<p>
+						La Dra. Jane Smith es una experta en odontología con años de experiencia brindando atención
+						dental de alta calidad. Con su enfoque cálido y profesional, ha ayudado a cientos de pacientes a
+						recuperar su salud y confianza bucal. Especialista en tratamientos avanzados y reconocida por su
+						enfoque personalizado, te asegurará la mejor experiencia en cada visita.
+					</p>
+
+					<!--https://wa.me/11234567890-->
+					<a href="#8441956798" class="whatsapp">
+						<span class="fa-brands fa-whatsapp"></span> +52 844 195 6798
+					</a>
+				</div>
+
+			</div>
+		</div>
+
+
+
+		<div class="stats">
+			<div class="container">
+
+
+
+				<div class="item">
+					<span class="fa-solid fa-tooth icon"></span>
+					<h4><span class="counter">1000</span>+</h4>
+					<h5>Pacientes curados
+					</h5>
+				</div>
+
+				<div class="item">
+					<span class="fa-solid fa-users icon"></span>
+					<h4><span class="counter">10</span>+</h4>
+					<h5>Personal médico</h5>
+				</div>
+
+				<div class="item">
+					<span class="fa-regular fa-face-smile icon"></span>
+					<h4><span class="counter">700</span>+</h4>
+					<h5>Reseñas positivas</h5>
+				</div>
+
+
+
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+
+
+		<div class="contact" id="contact">
+			<br><br><br><br><br>
+			<div class="container">
+				<div class="contactinfo">
+					<h2>¡Contactanos!</h2>
+					<h3>
+						Pregunta por los tratamientos de tu interes
+					</h3>
+					<div class="infowrap">
+						<div class="info">
+							<span class="fa-solid fa-phone-volume"></span>
+							<h4>Llamanos:</h4>
+							<p>
+								+52 844 195 67 98
+							</p>
+						</div>
+						<div class="info">
+							<span class="fa-solid fa-envelope"></span>
+							<h4>Nuestro Email:</h4>
+							<p>
+								<a href="mailto:doctor@yourmail.com">
+									doctor@yourmail.com
+								</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				<!--contactinfo-->
+			</div>
+		</div>
+		<!--/contact-->
+
+
+
+
+
+		<footer>
+			<div class="container">
+
+
+				<div class="copyright">
+					Copyright &copy; 2024 | <a href="">DentistPro</a>
+				</div>
+
+				<div class="socialmedia">
+					<a href="#"><span class="fa-brands fa-twitter"></span></a>
+					<a href="#"><span class="fa-brands fa-youtube"></span></a>
+				</div>
+
+			</div>
+		</footer>
+		<!--footer-->
+
+		<script>
+			var menuid = '#headnav';
+			var gaptop = 135;
+			var scrollspeed = 1200;
+			var menu_active_class = 'active';
+		</script>
+		<script src="js/bliss.js"></script>
+		<script src="js/waypoints.min.js"></script>
+		<script src="js/jquery.counterup.js"></script>
+</body>
+
+</html>
+<!-- Template By: LayoutFlow, URL: https://layoutflow.com/  -->
