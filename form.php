@@ -37,23 +37,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 // Cerrar la conexión
 $conn->close();
 ?>
-
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <title>Formulario de Contacto</title>
-</head>
-<body>
-    <h2>Formulario de Contacto</h2>
-    <form method="post" action="">
-        <label for="nombre">Nombre:</label><br>
-        <input type="text" id="nombre" name="nombre" required><br><br>
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" required><br><br>
-        <label for="mensaje">Mensaje:</label><br>
-        <textarea id="mensaje" name="mensaje" required></textarea><br><br>
-        <input type="submit" value="Enviar">
-    </form>
-</body>
-</html>
