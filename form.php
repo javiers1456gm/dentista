@@ -4,9 +4,10 @@ $host = 'servidornube.mysql.database.azure.com';
 $username = 'javier@servidornube';
 $password = 'Daniel12*'; // Reemplaza 'tu_contraseña' con la contraseña real
 $dbname = 'mi_base_de_datos'; // Reemplaza con el nombre de tu base de datos
+$port = 3306; // Especifica el puerto
 
-// Crear conexión
-$conn = new mysqli($host, $username, $password, $dbname);
+// Crear conexión con el puerto especificado
+$conn = new mysqli($host, $username, $password, $dbname, $port);
 
 // Verificar conexión
 if ($conn->connect_error) {
@@ -35,7 +36,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->close();
 }
 
-
-// Cerrar la conexión
+// Cerrar la conexión al final
 $conn->close();
 ?>
