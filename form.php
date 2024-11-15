@@ -18,21 +18,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nombre = $_POST['nombre'];
     $email = $_POST['email'];
     $mensaje = $_POST['mensaje'];
-
-    // Preparar y vincular
+    
+    // Mostrar los datos para verificar que se están recibiendo correctamente
+    echo "Nombre: $nombre, Email: $email, Mensaje: $mensaje<br>";
+    
+    // Inserción en la base de datos
     $stmt = $conn->prepare("INSERT INTO datos_formulario (nombre, email, mensaje) VALUES (?, ?, ?)");
     $stmt->bind_param("sss", $nombre, $email, $mensaje);
 
-    // Ejecutar la consulta
     if ($stmt->execute()) {
         echo "Datos guardados correctamente.";
     } else {
         echo "Error: " . $stmt->error;
     }
-
-    // Cerrar la declaración
+    
     $stmt->close();
 }
+
 
 // Cerrar la conexión
 $conn->close();
